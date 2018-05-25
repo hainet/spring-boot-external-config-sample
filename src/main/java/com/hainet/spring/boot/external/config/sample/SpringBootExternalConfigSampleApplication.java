@@ -19,9 +19,9 @@ public class SpringBootExternalConfigSampleApplication {
             @Value("${internal-key}") final String internalKeyValue,
             @Value("${external-key}") final String externalKeyValue) {
         return args -> {
-            System.out.println(keyValue);
-            System.out.println(internalKeyValue);
-            System.out.println(externalKeyValue);
+            System.out.println("key: " + keyValue);
+            System.out.println("internal-key: " + internalKeyValue);
+            System.out.println("external-ley: " + externalKeyValue);
         };
     }
 }
